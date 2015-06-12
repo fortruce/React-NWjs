@@ -1,4 +1,12 @@
 var React = require('react');
 
-React.render(React.createElement('div', null, 'Hello World'),
+var HelloWorld = React.createClass({
+  render() {
+    return (
+      <div>Hello World!</div>
+    );
+  }
+});
+
+React.render(<HelloWorld/>,
              document.getElementById('container'));
